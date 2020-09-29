@@ -2,8 +2,8 @@ import RPi.GPIO as GPIO
 from time import sleep
 
 #DEFINE PINS
-DIR = 13	
-STEP = 11
+DIR = 10   
+STEP = 8
 CW = 1
 CCW = 0
 
