@@ -1,4 +1,4 @@
-from machine import Pin, SPI
+from machine import Pin, SPI, PWM
 import struct
 
 from nrf24l01 import NRF24L01
@@ -10,6 +10,7 @@ led = Pin(25, Pin.OUT)                # LED
 btn = Pin(28, Pin.IN, Pin.PULL_DOWN)  # button press
 csn = Pin(15, mode=Pin.OUT, value=1)  # chip select not
 ce  = Pin(14, mode=Pin.OUT, value=0)  # chip enable
+pwm = PWM(Pin(28)) # Throttle pin.
 
 # Addresses are in little-endian format. They correspond to big-endian
 # 0xf0f0f0f0e1, 0xf0f0f0f0d2 - swap these on the other Pico!
@@ -51,6 +52,10 @@ def demo(nrf):
                 handle_forward.value(0)
                 led.value(1)
                 #handle_backward.value(0)
+            elif(got == 2):
+                pwm.freq(1000)
+
+                pwm.duty_u16(50000)
             else:
                 handle_forward.value(1)
                 led.value(0)
