@@ -18,7 +18,7 @@ yAxis = ADC(Pin(27))
 # 0xf0f0f0f0e1, 0xf0f0f0f0d2 - swap these on the other Pico!
 pipes = (b"\xe1\xf0\xf0\xf0\xf0", b"\xd2\xf0\xf0\xf0\xf0")
 
-def demo(nrf):
+def control(nrf):
     stepper = 0
     handle = 0
     power = ""
@@ -30,12 +30,12 @@ def demo(nrf):
         if leftbtn.value():
             if power != "off":
                 power = "off"
-                transmitte(nrf,6)
+                transmitte(nrf,1)
 
         if throttle.value():
             if power != "Mo power!":
                 power = "Mo power!"
-                transmitte(nrf,5)
+                transmitte(nrf,2)
             
         if xValue > 600 and xValue < 60000:
             xStatus = "middle"
@@ -56,17 +56,17 @@ def demo(nrf):
         if yValue > 600 and yValue < 60000:
             yStatus = "middle"
             if (handle == 1):
-                transmitte(nrf,0)
+                transmitte(nrf,7)
                 handle = 0
             
         elif yValue <= 600:
             yStatus = "forward"
-            transmitte(nrf,1)
+            transmitte(nrf,8)
             handle = 1
             
         elif yValue >= 60000:
             yStatus = "backward"
-            transmitte(nrf,2)
+            transmitte(nrf,9)
             handle = 1
         
         print("X: " + xStatus + ", Y: " + yStatus + " -- button " + power + " -- Movement")
@@ -98,5 +98,5 @@ def auto_ack(nrf):
 
 nrf = setup()
 auto_ack(nrf)
-demo(nrf)
+control(nrf)
 
