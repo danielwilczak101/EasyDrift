@@ -3,10 +3,11 @@ from nrf24l01 import NRF24L01
 import struct
 import time
 import utime
+import math
 
 led = Pin(25, Pin.OUT)                # LED
-leftbtn = Pin(0, Pin.IN, Pin.PULL_DOWN)  # left button
-throttle = Pin(1, Pin.IN, Pin.PULL_DOWN)  # right button
+left = Pin(0, Pin.IN, Pin.PULL_DOWN)  # left button
+right = Pin(1, Pin.IN, Pin.PULL_DOWN)  # right button
 csn = Pin(15, mode=Pin.OUT, value=1)  # chip select not
 ce  = Pin(14, mode=Pin.OUT, value=0)  # chip enable
 
@@ -32,60 +33,25 @@ def control(nrf):
         * Has to be that specific size
     """
 
-    power, handle, stepper = 0, 0, ""
+    message = [00000,00000,00000,0]
 
     while True:
 
-
-    
-        xValue = xAxis.read_u16()
-        yValue = yAxis.read_u16()
-
-        if leftbtn.value():
-            if power != "off":
-                power = "off"
-                transmitte(nrf,1)
-
-        if throttle.value():
-            if power != "Mo power!":
-                power = "Mo power!"
-                transmitte(nrf,2)
-            
-        if xValue > 600 and xValue < 60000:
-            xStatus = "middle"
-            if (stepper == 1):
-                transmitte(nrf,0)
-                stepper = 0
-            
-        elif xValue <= 600:
-            xStatus = "left"
-            transmitte(nrf,3)
-            stepper = 1
-            
-        elif xValue >= 60000:
-            xStatus = "right"
-            transmitte(nrf,4)
-            stepper = 1
-
-        if yValue > 600 and yValue < 60000:
-            yStatus = "middle"
-            if (handle == 1):
-                transmitte(nrf,7)
-                handle = 0
-            
-        elif yValue <= 600:
-            yStatus = "forward"
-            transmitte(nrf,8)
-            handle = 1
-            
-        elif yValue >= 60000:
-            yStatus = "backward"
-            transmitte(nrf,9)
-            handle = 1
+        x = xAxis.read_u16()
+        y = yAxis.read_u16()
         
-        print("X: " + xStatus + ", Y: " + yStatus + " -- button " + power + " -- Movement")
+        mappedx = valmap(x, 280, 65000, -33000, 33000)
+        mappedy = valmap(y, 280, 65000, -33000, 33000)
+        throttle = math.sqrt(mappedx**2 + mappedy**2)
+        throttle = throttle if throttle < 33000 else 33000
+        
+        #transmitte(nrf,9)
+        
+        print("X, %s Y: %s Throttle: %s" % (x, y, throttle))
         utime.sleep(0.1)
 
+def valmap(value, istart, istop, ostart, ostop):
+  return ostart + (ostop - ostart) * ((value - istart) / (istop - istart))
 
 def setup():
     """Setup radio transiever to recieve commands and transmit verification."""
@@ -113,4 +79,5 @@ def auto_ack(nrf):
 nrf = setup()
 auto_ack(nrf)
 control(nrf)
+
 
