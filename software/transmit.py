@@ -1,9 +1,8 @@
 from machine import Pin, SPI, ADC
+from nrf24l01 import NRF24L01
 import struct
 import time
 import utime
-
-from nrf24l01 import NRF24L01
 
 led = Pin(25, Pin.OUT)                # LED
 leftbtn = Pin(0, Pin.IN, Pin.PULL_DOWN)  # left button
@@ -19,10 +18,25 @@ yAxis = ADC(Pin(27))
 pipes = (b"\xe1\xf0\xf0\xf0\xf0", b"\xd2\xf0\xf0\xf0\xf0")
 
 def control(nrf):
-    stepper = 0
-    handle = 0
-    power = ""
+    """Main logic behind how the cart will send radio control signals.
+    
+    How the logic should work:
+        Each section will change one index in main array
+
+        Example:
+        More complex but greater control
+        [x, y, throotle value, [Forward, Backward or middle]]
+        [0 - 70000, 0-70000, 52000-0, 0-2]
+        [00000/00000/00000/0]
+
+        * Has to be that specific size
+    """
+
+    power, handle, stepper = 0, 0, ""
+
     while True:
+
+
     
         xValue = xAxis.read_u16()
         yValue = yAxis.read_u16()
@@ -74,12 +88,11 @@ def control(nrf):
 
 
 def setup():
+    """Setup radio transiever to recieve commands and transmit verification."""
     nrf = NRF24L01(SPI(0), csn, ce, payload_size=8)
-    
     nrf.open_tx_pipe(pipes[0])
     nrf.open_rx_pipe(1, pipes[1])
     nrf.start_listening()
-
     led.value(0)
     return nrf
 
@@ -93,7 +106,8 @@ def transmitte(nrf,data):
     nrf.start_listening()
 
 def auto_ack(nrf):
-    nrf.reg_write(0x01, 0b11111000)  # enable auto-ack on all pipes
+    """Enables auto-ack on all pipes"""
+    nrf.reg_write(0x01, 0b11111000)
     
 
 nrf = setup()
