@@ -7,8 +7,8 @@ ERAU and EPPL collaberation to create an autonomous drift cart that drives aroun
 [dylan] Cart control PCB board.  
 [dylan] Hand held radio control PCB board.   
 [dylan] Drift handle encoder mounting bracket.
-[dylan] Battery clamp to secure battery to cart.
-[Dan] Code for transmit / recieve.  
+[dylan] Battery clamp to secure battery to cart.  
+[Dan] Code for transmit / recieve.    
 
 ### Image Progress:
 IMAGE OF CART GOES HERE
