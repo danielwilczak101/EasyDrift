@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name kicad-footprints-master)(type KiCad)(uri /Users/dylanballback/Downloads/kicad-footprints-master)(options "")(descr ""))
+  (lib (name MCU_RaspberryPi_and_Boards)(type KiCad)(uri ${KIPRJMOD}/Footprints/MCU_RaspberryPi_and_Boards.pretty)(options "")(descr ""))
+)
