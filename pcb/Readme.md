@@ -1,1 +1,1 @@
-This is the Auotonomous Cart PCB folder
+This is the Autonomous Cart PCB folder
