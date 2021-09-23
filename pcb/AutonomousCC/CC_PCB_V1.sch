@@ -25,7 +25,7 @@ F 3 "" H 6450 3600 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x06 J5
+L CC_PCB_V1-rescue:Conn_01x06-Connector_Generic J5
 U 1 1 6132C346
 P 8620 5080
 F 0 "J5" H 8700 5072 50  0000 L CNN
@@ -36,7 +36,7 @@ F 3 "~" H 8620 5080 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x04_Odd_Even J2
+L CC_PCB_V1-rescue:Conn_02x04_Odd_Even-Connector_Generic J2
 U 1 1 6132E9AC
 P 9050 4000
 F 0 "J2" H 9100 4317 50  0000 C CNN
@@ -94,7 +94,7 @@ F 7 "Manufacturer Recommendations" H 5300 1650 50  0001 L BNN "STANDARD"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0102
+L CC_PCB_V1-rescue:GND-power #PWR0102
 U 1 1 6139949D
 P 8400 3900
 F 0 "#PWR0102" H 8400 3650 50  0001 C CNN
@@ -129,7 +129,7 @@ Wire Wire Line
 Wire Wire Line
 	7150 3750 7300 3750
 $Comp
-L power:GND #PWR0105
+L CC_PCB_V1-rescue:GND-power #PWR0105
 U 1 1 613C4FFD
 P 8020 4880
 F 0 "#PWR0105" H 8020 4630 50  0001 C CNN
@@ -191,7 +191,7 @@ NoConn ~ 9350 4200
 NoConn ~ 8420 5280
 NoConn ~ 8420 5380
 $Comp
-L power:+5V #PWR0111
+L CC_PCB_V1-rescue:+5V-power #PWR0111
 U 1 1 6140F10C
 P 8170 5180
 F 0 "#PWR0111" H 8170 5030 50  0001 C CNN
@@ -202,7 +202,7 @@ F 3 "" H 8170 5180 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:+5V #PWR0113
+L CC_PCB_V1-rescue:+5V-power #PWR0113
 U 1 1 614163BA
 P 8970 1840
 F 0 "#PWR0113" H 8970 1690 50  0001 C CNN
@@ -242,7 +242,7 @@ ESC Connection
 NoConn ~ 8970 1640
 NoConn ~ 8970 1740
 $Comp
-L power:GND #PWR0103
+L CC_PCB_V1-rescue:GND-power #PWR0103
 U 1 1 6132ADE6
 P 8970 1540
 F 0 "#PWR0103" H 8970 1290 50  0001 C CNN
@@ -253,7 +253,7 @@ F 3 "" H 8970 1540 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR0101
+L CC_PCB_V1-rescue:GND-power #PWR0101
 U 1 1 6132D47F
 P 7470 2850
 F 0 "#PWR0101" H 7470 2600 50  0001 C CNN
@@ -264,7 +264,7 @@ F 3 "" H 7470 2850 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG0103
+L CC_PCB_V1-rescue:PWR_FLAG-power #FLG0103
 U 1 1 6132C74E
 P 7150 2850
 F 0 "#FLG0103" H 7150 2925 50  0001 C CNN
@@ -300,7 +300,7 @@ F 4 "282837-2" H 6450 1350 50  0001 L BNN "Comment"
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0104
+L CC_PCB_V1-rescue:+5V-power #PWR0104
 U 1 1 613A9FB6
 P 5690 4450
 F 0 "#PWR0104" H 5690 4300 50  0001 C CNN
@@ -312,7 +312,7 @@ F 3 "" H 5690 4450 50  0001 C CNN
 $EndComp
 NoConn ~ 5750 4150
 $Comp
-L power:PWR_FLAG #FLG0101
+L CC_PCB_V1-rescue:PWR_FLAG-power #FLG0101
 U 1 1 6138143E
 P 8970 1840
 F 0 "#FLG0101" H 8970 1915 50  0001 C CNN
@@ -326,7 +326,7 @@ Connection ~ 8970 1840
 Wire Wire Line
 	5750 4450 5690 4450
 $Comp
-L power:+5V #PWR0106
+L CC_PCB_V1-rescue:+5V-power #PWR0106
 U 1 1 6137FAD9
 P 4600 1350
 F 0 "#PWR0106" H 4600 1200 50  0001 C CNN
@@ -337,7 +337,7 @@ F 3 "" H 4600 1350 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:PWR_FLAG #FLG0105
+L CC_PCB_V1-rescue:PWR_FLAG-power #FLG0105
 U 1 1 61389C22
 P 4600 1350
 F 0 "#FLG0105" H 4600 1425 50  0001 C CNN
@@ -348,7 +348,7 @@ F 3 "~" H 4600 1350 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:GND #PWR0107
+L CC_PCB_V1-rescue:GND-power #PWR0107
 U 1 1 6138B5C9
 P 6000 2050
 F 0 "#PWR0107" H 6000 1800 50  0001 C CNN
@@ -359,7 +359,7 @@ F 3 "" H 6000 2050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:+5V #PWR0108
+L CC_PCB_V1-rescue:+5V-power #PWR0108
 U 1 1 6138D18B
 P 9450 3900
 F 0 "#PWR0108" H 9450 3750 50  0001 C CNN
@@ -372,7 +372,7 @@ $EndComp
 Wire Wire Line
 	6000 1350 6150 1350
 $Comp
-L power:GND #PWR0109
+L CC_PCB_V1-rescue:GND-power #PWR0109
 U 1 1 6139CFDB
 P 6150 1450
 F 0 "#PWR0109" H 6150 1200 50  0001 C CNN
