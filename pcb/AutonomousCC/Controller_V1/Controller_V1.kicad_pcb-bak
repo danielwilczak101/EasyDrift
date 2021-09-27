@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 8)
+    (drawings 9)
     (tracks 133)
     (zones 0)
     (modules 18)
@@ -1528,6 +1528,9 @@
     )
   )
 
+  (gr_text "Designed By: Dylan Ballback, \nJacob Romeo, Daniel Wilzcak\n" (at 211.455 133.985) (layer F.SilkS) (tstamp 61520B61)
+    (effects (font (size 1.5 1.5) (thickness 0.25)))
+  )
   (gr_arc (start 234.315 59.055) (end 242.57 59.055) (angle -90) (layer Edge.Cuts) (width 0.05) (tstamp 6151BCC6))
   (gr_arc (start 107.95 59.055) (end 107.95 50.8) (angle -90) (layer Edge.Cuts) (width 0.05) (tstamp 6151BCC6))
   (gr_arc (start 107.95 130.175) (end 99.695 130.175) (angle -90) (layer Edge.Cuts) (width 0.05) (tstamp 6151BCC6))
