@@ -340,7 +340,7 @@
     )
   )
 
-  (module Button_Switch_THT:SW_PUSH-12mm (layer F.Cu) (tedit 5D160D14) (tstamp 6151E410)
+  (module Button_Switch_THT:SW_PUSH-12mm (layer F.Cu) (tedit 5D160D14) (tstamp 6151EA2A)
     (at 143.075 65.485)
     (descr "SW PUSH 12mm https://www.e-switch.com/system/asset/product_line/data_sheet/143/TL1100.pdf")
     (tags "tact sw push 12mm")
@@ -387,7 +387,7 @@
   )
 
   (module Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal (layer F.Cu) (tedit 5AE5139B) (tstamp 61513C21)
-    (at 201.295 127.635 180)
+    (at 203.835 79.375 180)
     (descr "Resistor, Axial_DIN0204 series, Axial, Horizontal, pin pitch=7.62mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0204 series Axial Horizontal pin pitch 7.62mm 0.167W length 3.6mm diameter 1.6mm")
     (path /61517D58)
@@ -427,8 +427,8 @@
     )
   )
 
-  (module Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal (layer F.Cu) (tedit 5AE5139B) (tstamp 6151E28E)
-    (at 193.675 121.92)
+  (module Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal (layer F.Cu) (tedit 5AE5139B) (tstamp 6151E618)
+    (at 145.415 78.74)
     (descr "Resistor, Axial_DIN0204 series, Axial, Horizontal, pin pitch=7.62mm, 0.167W, length*diameter=3.6*1.6mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0204 series Axial Horizontal pin pitch 7.62mm 0.167W length 3.6mm diameter 1.6mm")
     (path /61518FD8)
@@ -589,8 +589,8 @@
     )
   )
 
-  (module MCU_RaspberryPi_and_Boards:RPi_Pico_SMD_TH (layer F.Cu) (tedit 5F638C80) (tstamp 614E7124)
-    (at 174.625 102.87 180)
+  (module MCU_RaspberryPi_and_Boards:RPi_Pico_SMD_TH (layer F.Cu) (tedit 5F638C80) (tstamp 6151ECAC)
+    (at 174.625 108.585 180)
     (descr "Through hole straight pin header, 2x20, 2.54mm pitch, double rows")
     (tags "Through hole pin header THT 2x20 2.54mm double row")
     (path /614CC605)
@@ -971,7 +971,7 @@
   )
 
   (module MCU_RaspberryPi_and_Boards:SOT230P696X180-4N (layer F.Cu) (tedit 614DE534) (tstamp 6151C623)
-    (at 131.4704 124.46 180)
+    (at 128.8796 124.46 180)
     (path /6150CE35)
     (fp_text reference VR1 (at 0.558835 -4.648495) (layer F.SilkS)
       (effects (font (size 1.640102 1.640102) (thickness 0.15)))
@@ -1013,7 +1013,7 @@
   )
 
   (module Capacitor_THT:CP_Radial_D5.0mm_P2.50mm (layer F.Cu) (tedit 5AE50EF0) (tstamp 614FB34C)
-    (at 140.97 118.745 270)
+    (at 140.97 118.11 270)
     (descr "CP, Radial series, Radial, pin pitch=2.50mm, , diameter=5mm, Electrolytic Capacitor")
     (tags "CP Radial series Radial pin pitch 2.50mm  diameter 5mm Electrolytic Capacitor")
     (path /61515138)
@@ -1163,7 +1163,7 @@
   )
 
   (module Capacitor_THT:CP_Radial_D5.0mm_P2.50mm (layer F.Cu) (tedit 5AE50EF0) (tstamp 614FB0BB)
-    (at 140.97 126.365 270)
+    (at 140.97 127 270)
     (descr "CP, Radial series, Radial, pin pitch=2.50mm, , diameter=5mm, Electrolytic Capacitor")
     (tags "CP Radial series Radial pin pitch 2.50mm  diameter 5mm Electrolytic Capacitor")
     (path /6151CAEA)
@@ -1312,8 +1312,8 @@
     )
   )
 
-  (module MCU_RaspberryPi_and_Boards:XDCR_COM-09032 (layer F.Cu) (tedit 614CC4D6) (tstamp 6151E05C)
-    (at 220.345 88.9 270)
+  (module MCU_RaspberryPi_and_Boards:XDCR_COM-09032 (layer F.Cu) (tedit 614CC4D6) (tstamp 6151F6D1)
+    (at 220.345 90.805 270)
     (path /614CFFF2)
     (fp_text reference U3 (at -2.625 -15.235 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -1393,8 +1393,8 @@
       (net 20 "Net-(U3-PadB1A)"))
   )
 
-  (module MCU_RaspberryPi_and_Boards:XDCR_COM-09032 (layer F.Cu) (tedit 614CC4D6) (tstamp 6151E18E)
-    (at 123.19 88.9 270)
+  (module MCU_RaspberryPi_and_Boards:XDCR_COM-09032 (layer F.Cu) (tedit 614CC4D6) (tstamp 6151F7C6)
+    (at 120.65 93.345 270)
     (path /614F8BBB)
     (fp_text reference U1 (at -2.625 -15.235 90) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
