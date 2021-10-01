@@ -1,8 +1,0 @@
-(sym_lib_table
-  (lib (name MCU_RaspberryPi_and_Boards)(type Legacy)(uri ${KIPRJMOD}/Symbols/MCU_RaspberryPi_and_Boards.lib)(options "")(descr ""))
-  (lib (name BOB-12009)(type Legacy)(uri ${KIPRJMOD}/Symbols/BOB-12009.lib)(options "")(descr ""))
-  (lib (name USB1130-15-A_REVA)(type Legacy)(uri ${KIPRJMOD}/Symbols/USB1130-15-A_REVA.lib)(options "")(descr ""))
-  (lib (name LM1117T-3.3_NOPB)(type Legacy)(uri ${KIPRJMOD}/Symbols/LM1117T-3.3_NOPB.lib)(options "")(descr ""))
-  (lib (name 282837-2)(type Legacy)(uri ${KIPRJMOD}/Symbols/282837-2.lib)(options "")(descr ""))
-  (lib (name LM1117MP-1.8)(type Legacy)(uri ${KIPRJMOD}/Symbols/LM1117MP-1.8.lib)(options "")(descr ""))
-)
