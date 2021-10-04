@@ -6,4 +6,6 @@
   (lib (name 282837-2)(type Legacy)(uri ${KIPRJMOD}/Symbols/282837-2.lib)(options "")(descr ""))
   (lib (name LM1117MP-1.8)(type Legacy)(uri ${KIPRJMOD}/Symbols/LM1117MP-1.8.lib)(options "")(descr ""))
   (lib (name CC_PCB_V1-rescue)(type Legacy)(uri ${KIPRJMOD}/CC_PCB_V1-rescue.lib)(options "")(descr ""))
+  (lib (name 1-1437575-7)(type Legacy)(uri /Users/dylanballback/Documents/Drift_AI/pcb/AutonomousCC/Symbols/1-1437575-7.lib)(options "")(descr ""))
+  (lib (name SSA12G)(type Legacy)(uri ${KIPRJMOD}/Symbols/SSA12G.lib)(options "")(descr ""))
 )
