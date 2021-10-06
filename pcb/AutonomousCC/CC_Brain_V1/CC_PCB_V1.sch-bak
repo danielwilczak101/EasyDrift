@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title "Autonomous Crazy Cart V1"
 Date "09/12/2021"
 Rev "09/18/2021"
@@ -13,17 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L CC_PCB_V1-rescue:Pico-MCU_RaspberryPi_and_Boards U1
-U 1 1 61312BD2
-P 4820 4440
-F 0 "U1" H 4820 4240 50  0000 L CNN
-F 1 "Pico" H 4770 4340 50  0000 L CNN
-F 2 "MCU_RaspberryPi_and_Boards:RPi_Pico_SMD_TH" V 4820 4440 50  0001 C CNN
-F 3 "" H 4820 4440 50  0001 C CNN
-	1    4820 4440
-	-1   0    0    1   
-$EndComp
 $Comp
 L CC_PCB_V1-rescue:Conn_01x06-Connector_Generic J5
 U 1 1 6132C346
@@ -38,65 +27,45 @@ $EndComp
 $Comp
 L CC_PCB_V1-rescue:Conn_02x04_Odd_Even-Connector_Generic J2
 U 1 1 6132E9AC
-P 7620 4240
-F 0 "J2" H 7670 4557 50  0000 C CNN
-F 1 "Antenna_Conn_02x04_Odd_Even" H 7670 4466 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 7620 4240 50  0001 C CNN
-F 3 "~" H 7620 4240 50  0001 C CNN
-	1    7620 4240
+P 7750 4200
+F 0 "J2" H 7800 4517 50  0000 C CNN
+F 1 "Antenna_Conn_02x04_Odd_Even" H 7800 4426 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 7750 4200 50  0001 C CNN
+F 3 "~" H 7750 4200 50  0001 C CNN
+	1    7750 4200
 	1    0    0    -1  
 $EndComp
-Text GLabel 8170 4240 2    50   Input ~ 0
+Text GLabel 8250 4200 2    50   Input ~ 0
 GP14
-Text GLabel 5620 3590 2    50   Input ~ 0
+Text GLabel 5850 3650 2    50   Input ~ 0
 GP14
-Text GLabel 7170 4240 0    50   Input ~ 0
+Text GLabel 7350 4200 0    50   Input ~ 0
 GP17
 Wire Wire Line
 	7020 2905 7270 2905
 Wire Wire Line
 	7020 3005 7270 3005
-Wire Wire Line
-	7920 4240 8170 4240
-Wire Wire Line
-	7170 4240 7420 4240
-Wire Wire Line
-	5620 3490 5520 3490
-Wire Wire Line
-	5520 3590 5620 3590
 $Comp
 L CC_PCB_V1-rescue:GND-power #PWR0102
 U 1 1 6139949D
-P 6970 4140
-F 0 "#PWR0102" H 6970 3890 50  0001 C CNN
-F 1 "GND" H 6975 3967 50  0000 C CNN
-F 2 "" H 6970 4140 50  0001 C CNN
-F 3 "" H 6970 4140 50  0001 C CNN
-	1    6970 4140
+P 7200 4100
+F 0 "#PWR0102" H 7200 3850 50  0001 C CNN
+F 1 "GND" H 7205 3927 50  0000 C CNN
+F 2 "" H 7200 4100 50  0001 C CNN
+F 3 "" H 7200 4100 50  0001 C CNN
+	1    7200 4100
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	7420 4140 6970 4140
-Text GLabel 5670 4890 2    50   Input ~ 0
+Text GLabel 5850 4950 2    50   Input ~ 0
 GP4
-Wire Wire Line
-	7420 4440 7170 4440
-Wire Wire Line
-	5520 4890 5670 4890
-Text GLabel 5670 4590 2    50   Input ~ 0
+Text GLabel 5850 4650 2    50   Input ~ 0
 GP6
-Text GLabel 5670 4490 2    50   Input ~ 0
+Text GLabel 5850 4550 2    50   Input ~ 0
 GP7
-Text GLabel 7170 4340 0    50   Input ~ 0
+Text GLabel 7350 4300 0    50   Input ~ 0
 GP6
-Text GLabel 7170 4440 0    50   Input ~ 0
+Text GLabel 8250 4300 2    50   Input ~ 0
 GP7
-Wire Wire Line
-	8170 4340 7920 4340
-Wire Wire Line
-	7420 4340 7170 4340
-Wire Wire Line
-	5520 4590 5670 4590
 $Comp
 L CC_PCB_V1-rescue:GND-power #PWR0105
 U 1 1 613C4FFD
@@ -112,35 +81,12 @@ Wire Wire Line
 	7270 2805 6870 2805
 Wire Wire Line
 	7270 3305 7020 3305
-Text GLabel 8170 4340 2    50   Input ~ 0
+Text GLabel 7350 4400 0    50   Input ~ 0
 GP4
-NoConn ~ 5520 5390
-NoConn ~ 5520 5290
-NoConn ~ 5520 5190
-NoConn ~ 5520 5090
-NoConn ~ 5520 4990
-NoConn ~ 5520 4790
-NoConn ~ 5520 4690
-NoConn ~ 5520 4390
-NoConn ~ 5520 4290
-NoConn ~ 5520 4190
-NoConn ~ 4120 5390
-NoConn ~ 4120 5090
-NoConn ~ 4120 4890
-NoConn ~ 4120 4690
-NoConn ~ 4120 4390
-NoConn ~ 4120 4190
-NoConn ~ 4120 3990
-NoConn ~ 4120 3890
-NoConn ~ 4120 3790
-NoConn ~ 4120 3690
-NoConn ~ 4720 3290
-NoConn ~ 4820 3290
-NoConn ~ 4920 3290
-NoConn ~ 7920 4440
+NoConn ~ 7970 4940
 NoConn ~ 7270 3205
 NoConn ~ 7270 3105
-Text Notes 7520 4630 0    59   ~ 12
+Text Notes 7570 5130 0    59   ~ 12
 Antenna
 Text Notes 7360 2685 0    59   ~ 12
 Relay
@@ -151,29 +97,26 @@ ESC Connection
 $Comp
 L CC_PCB_V1-rescue:GND-power #PWR0101
 U 1 1 6132D47F
-P 5840 3690
-F 0 "#PWR0101" H 5840 3440 50  0001 C CNN
-F 1 "GND" V 5830 3490 50  0000 C CNN
-F 2 "" H 5840 3690 50  0001 C CNN
-F 3 "" H 5840 3690 50  0001 C CNN
-	1    5840 3690
+P 6200 3750
+F 0 "#PWR0101" H 6200 3500 50  0001 C CNN
+F 1 "GND" V 6190 3550 50  0000 C CNN
+F 2 "" H 6200 3750 50  0001 C CNN
+F 3 "" H 6200 3750 50  0001 C CNN
+	1    6200 3750
 	0    -1   -1   0   
 $EndComp
 $Comp
 L CC_PCB_V1-rescue:PWR_FLAG-power #FLG0103
 U 1 1 6132C74E
-P 5520 3690
-F 0 "#FLG0103" H 5520 3765 50  0001 C CNN
-F 1 "PWR_FLAG" V 5510 3740 50  0000 L CNN
-F 2 "" H 5520 3690 50  0001 C CNN
-F 3 "~" H 5520 3690 50  0001 C CNN
-	1    5520 3690
+P 6250 3600
+F 0 "#FLG0103" H 6250 3675 50  0001 C CNN
+F 1 "PWR_FLAG" V 6250 3700 50  0000 L CNN
+F 2 "" H 6250 3600 50  0001 C CNN
+F 3 "~" H 6250 3600 50  0001 C CNN
+	1    6250 3600
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	5520 3690 5840 3690
-NoConn ~ 4120 5190
-Text GLabel 3970 4790 0    50   Input ~ 0
+Text GLabel 4050 4850 0    50   Input ~ 0
 GP28
 $Comp
 L CC_PCB_V1-rescue:282837-2-282837-2 Screw_Terminal1
@@ -198,38 +141,26 @@ F 3 "" H 4520 1640 50  0001 C CNN
 	1    4520 1640
 	0    1    1    0   
 $EndComp
-Text GLabel 3970 5290 0    50   Input ~ 0
+Text GLabel 4100 5350 0    50   Input ~ 0
 +3.3V_Pico
 Text GLabel 7020 3305 0    50   Input ~ 0
 +5V
-Wire Wire Line
-	7920 4140 8170 4140
-Text GLabel 8170 4140 2    50   Input ~ 0
+Text GLabel 8250 4100 2    50   Input ~ 0
 +3.3V
-NoConn ~ 4120 3490
 Text GLabel 7020 2905 0    50   Output ~ 0
 GP10
 Text GLabel 7020 3005 0    50   Output ~ 0
 GP11
-Wire Wire Line
-	5670 4490 5520 4490
-Wire Wire Line
-	4120 4790 3970 4790
-Wire Wire Line
-	4120 5290 3970 5290
 Text GLabel 4520 1540 1    50   Input ~ 0
 +5V
 Text GLabel 3150 1540 0    50   Input ~ 0
 +3.3V
 Text Notes 3160 1220 0    59   ~ 12
 Voltage Regulator
-Connection ~ 5520 3690
-Text GLabel 3970 4990 0    59   Output ~ 0
+Text GLabel 4000 5050 0    59   Output ~ 0
 3.3V
 Text GLabel 4470 2225 0    59   Input ~ 0
 3.3V
-Wire Wire Line
-	4120 4990 3970 4990
 Text GLabel 4470 2325 0    59   Input ~ 0
 GP12
 Text GLabel 4470 2425 0    59   Input ~ 0
@@ -253,17 +184,17 @@ Text GLabel 4470 2725 0    59   Input ~ 0
 GP26
 Text GLabel 4470 2825 0    59   Input ~ 0
 GP27
-Text GLabel 5520 3890 2    59   Input ~ 0
+Text GLabel 5850 3950 2    59   Input ~ 0
 GP12
-Text GLabel 5520 3790 2    59   Input ~ 0
+Text GLabel 5850 3850 2    59   Input ~ 0
 GP13
-Text GLabel 4120 4090 0    59   Input ~ 0
+Text GLabel 4050 4150 0    59   Input ~ 0
 GP21
-Text GLabel 4120 4290 0    59   Input ~ 0
+Text GLabel 4050 4350 0    59   Input ~ 0
 GP22
-Text GLabel 4120 4490 0    59   Input ~ 0
+Text GLabel 4050 4550 0    59   Input ~ 0
 GP26
-Text GLabel 4120 4590 0    59   Input ~ 0
+Text GLabel 4050 4650 0    59   Input ~ 0
 GP27
 $Comp
 L CC_PCB_V1-rescue:C-Device C2
@@ -322,12 +253,7 @@ Wire Wire Line
 Wire Wire Line
 	3830 1540 4520 1540
 Connection ~ 3830 1540
-Text GLabel 5520 4090 2    50   Input ~ 0
-GP10
-Text GLabel 5520 3990 2    50   Input ~ 0
-GP11
-NoConn ~ 5620 3490
-Text GLabel 4120 3590 0    50   Input ~ 0
+Text GLabel 4050 3650 0    50   Input ~ 0
 GP17
 $Comp
 L CC_PCB_V1-rescue:USB1130-15-A_REVA-USB1130-15-A_REVA J3
@@ -443,7 +369,7 @@ U 1 1 615BBB5C
 P 2350 4750
 F 0 "S1" H 2427 4796 50  0000 L CNN
 F 1 "SSA12G" H 2427 4705 50  0000 L CNN
-F 2 "SW_SSA12G" H 2350 4750 50  0001 L BNN
+F 2 "my_footprints:SW_SSA12G" H 2350 4750 50  0001 L BNN
 F 3 "" H 2350 4750 50  0001 L BNN
 F 4 "Compliant" H 2350 4750 50  0001 L BNN "EU_RoHS_Compliance"
 F 5 "1-1437575-5" H 2350 4750 50  0001 L BNN "Comment"
@@ -454,4 +380,80 @@ Wire Wire Line
 	1850 4750 2050 4750
 Wire Wire Line
 	2350 4950 2350 5100
+$Sheet
+S 8850 1350 2000 1600
+U 615DA4AF
+F0 "relay" 50
+F1 "relay.sch" 50
+$EndSheet
+Text GLabel 5850 4150 2    50   Input ~ 0
+GP10
+Text GLabel 5850 4050 2    50   Input ~ 0
+GP11
+$Comp
+L CC_PCB_V1-rescue:Pico-MCU_RaspberryPi_and_Boards U1
+U 1 1 61312BD2
+P 5000 4500
+F 0 "U1" H 5000 4300 50  0000 L CNN
+F 1 "Pico" H 4950 4400 50  0000 L CNN
+F 2 "MCU_RaspberryPi_and_Boards:RPi_Pico_SMD_TH" V 5000 4500 50  0001 C CNN
+F 3 "" H 5000 4500 50  0001 C CNN
+	1    5000 4500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7350 4200 7550 4200
+Wire Wire Line
+	7550 4100 7200 4100
+Wire Wire Line
+	7350 4300 7550 4300
+Wire Wire Line
+	7550 4400 7350 4400
+Wire Wire Line
+	8050 4300 8250 4300
+Wire Wire Line
+	8250 4200 8050 4200
+Wire Wire Line
+	8050 4100 8250 4100
+Wire Wire Line
+	5850 3650 5700 3650
+Wire Wire Line
+	6200 3750 6150 3750
+Wire Wire Line
+	5700 3850 5850 3850
+Wire Wire Line
+	5850 3950 5700 3950
+Wire Wire Line
+	5700 4050 5850 4050
+Wire Wire Line
+	5850 4150 5700 4150
+Wire Wire Line
+	5700 4550 5850 4550
+Wire Wire Line
+	5850 4650 5700 4650
+Wire Wire Line
+	5850 4950 5700 4950
+Wire Wire Line
+	4300 4850 4050 4850
+Wire Wire Line
+	4050 4650 4300 4650
+Wire Wire Line
+	4300 4550 4050 4550
+Wire Wire Line
+	4050 4350 4300 4350
+Wire Wire Line
+	4300 4150 4050 4150
+Wire Wire Line
+	4050 3650 4300 3650
+Wire Wire Line
+	4100 5350 4300 5350
+Wire Wire Line
+	4000 5050 4300 5050
+Wire Wire Line
+	6250 3600 6150 3600
+Wire Wire Line
+	6150 3600 6150 3750
+Connection ~ 6150 3750
+Wire Wire Line
+	6150 3750 5700 3750
 $EndSCHEMATC

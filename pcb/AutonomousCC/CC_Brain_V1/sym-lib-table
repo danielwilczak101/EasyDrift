@@ -8,4 +8,5 @@
   (lib (name CC_PCB_V1-rescue)(type Legacy)(uri ${KIPRJMOD}/CC_PCB_V1-rescue.lib)(options "")(descr ""))
   (lib (name 1-1437575-7)(type Legacy)(uri /Users/dylanballback/Documents/Drift_AI/pcb/AutonomousCC/Symbols/1-1437575-7.lib)(options "")(descr ""))
   (lib (name SSA12G)(type Legacy)(uri ${KIPRJMOD}/Symbols/SSA12G.lib)(options "")(descr ""))
+  (lib (name PC817A)(type Legacy)(uri ${KIPRJMOD}/Symbols/PC817A.lib)(options "")(descr ""))
 )
