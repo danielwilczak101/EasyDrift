@@ -65,13 +65,13 @@ F 3 "" H 5850 1200 50  0001 C CNN
 $EndComp
 Text GLabel 5050 1300 0    50   Input ~ 0
 GP17
-Text GLabel 5050 1500 0    50   Input ~ 0
+Text GLabel 5850 1400 2    50   Input ~ 0
 GP07
 Text GLabel 5850 1300 2    50   Input ~ 0
 GP14
 NoConn ~ 5700 1500
 Wire Wire Line
-	5700 1400 5850 1400
+	5200 1500 5050 1500
 Wire Wire Line
 	5700 1300 5850 1300
 Wire Wire Line
@@ -81,7 +81,7 @@ Wire Wire Line
 Wire Wire Line
 	5200 1400 5050 1400
 Wire Wire Line
-	5050 1500 5200 1500
+	5850 1400 5700 1400
 $Comp
 L power:GND #PWR0102
 U 1 1 614DE3F1
@@ -159,7 +159,7 @@ Text GLabel 6350 3250 2    50   Input ~ 0
 GP27
 Text GLabel 6350 3350 2    50   Input ~ 0
 GP26
-Text GLabel 5850 1400 2    50   Input ~ 0
+Text GLabel 5050 1500 0    50   Input ~ 0
 GP04
 Text GLabel 4650 2950 0    50   Input ~ 0
 GP04
