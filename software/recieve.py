@@ -4,21 +4,22 @@ import struct
 import math
 
 # Handle
-handle_forward  = Pin(17, Pin.OUT)    # Relay 1.
-handle_backward = Pin(16, Pin.OUT)    # Relay 2.
+handle_forward  = Pin(10, Pin.OUT)    # Relay 1.
+handle_backward = Pin(11, Pin.OUT)    # Relay 2.
 
 # Radio
-csn = Pin(15, mode=Pin.OUT, value=1)  # chip select not.
-ce  = Pin(14, mode=Pin.OUT, value=0)  # chip enable.
+csn = Pin(14, mode=Pin.OUT, value=1)  # chip select not.
+ce  = Pin(17, mode=Pin.OUT, value=0)  # chip enable.
 
 # Throttle
-pwm = PWM(Pin(28))                    # Throttle pin.
+pwm = PWM(Pin(22))                    # Throttle pin.
 pwm.freg(1000)                        # Establish frequencry for throttle.
 
 # Stepper motor
-disable = PWM(Pin(13))                # Control stepper on or off.
+disable = PWM(Pin(21))                # Control stepper on or off.
+step = Pin(12)                        # Pin to sent PWM signal to.
 direction = 0                         # Starting direction.
-step = Pin(17)                        # Pin to sent PWM signal to.
+direction_pin = Pin(13, Pin.OUT)
 
 # Addresses are in little-endian format. They correspond to big-endian
 # 0xf0f0f0f0e1, 0xf0f0f0f0d2 - swap these on the other Pico!
@@ -32,26 +33,14 @@ handle_backward.value(1)
 stepper = rp2.StateMachine(0, move, freq=100000, set_base=step)
 
 def control(nrf) -> None:
-    """Main logic behind how the cart will react to radio control signals.
-
-    Recieved data:
-
-    data = 00000,00000 = x,y
-  
-    Example:
-        [x, y, [Forward, Backward or middle]]
-        [0 - 70000, 0-70000, *0-2]
-    """
-
-    # Wheel will start at 0 position by the handler and move to center forward postion.
-
-
+    """ """
+    
     while True:
         if nrf.any():
             buf = nrf.recv()
             recieved = struct.unpack("i", buf)[0]
             
-            # Translate what we recieved into throttle values
+            # Translate what we recieved from the controller.
             x, y = recieved[:5], recieved[5:]
 
             # Translate x, y to throttle values.
@@ -61,7 +50,7 @@ def control(nrf) -> None:
             throttle = throttle if throttle < 33000 else 33000
             
             # PWM for throttle value is Min power = 60,000 Max power = 0
-            max_power = 50000
+            max_power = 10000
             throttle = valmap(throttle, 0, 33000, 60000, max_power)
             throttle = throttle if throttle < 59000 else 60000
 
@@ -69,7 +58,6 @@ def control(nrf) -> None:
             direction = direction if mappedx > 0 else 1
             
             # Step to that direction while updating the global position.  
-             
             stepper.active(1)
 
 
