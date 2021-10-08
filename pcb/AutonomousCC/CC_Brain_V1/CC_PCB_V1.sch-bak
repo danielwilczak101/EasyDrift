@@ -83,16 +83,15 @@ Wire Wire Line
 	7270 3305 7020 3305
 Text GLabel 7350 4400 0    50   Input ~ 0
 GP4
-NoConn ~ 7970 4940
 NoConn ~ 7270 3205
 NoConn ~ 7270 3105
-Text Notes 7570 5130 0    59   ~ 12
+Text Notes 7620 3830 0    59   ~ 12
 Antenna
 Text Notes 7360 2685 0    59   ~ 12
 Relay
-Text Notes 4680 5670 0    59   ~ 12
+Text Notes 4880 3270 0    59   ~ 12
 PICO
-Text Notes 4730 1360 0    59   ~ 12
+Text Notes 4280 2110 0    59   ~ 12
 ESC Connection
 $Comp
 L CC_PCB_V1-rescue:GND-power #PWR0101
@@ -456,4 +455,32 @@ Wire Wire Line
 Connection ~ 6150 3750
 Wire Wire Line
 	6150 3750 5700 3750
+NoConn ~ 2350 4550
+NoConn ~ 4300 5450
+NoConn ~ 4300 5250
+NoConn ~ 4300 5150
+NoConn ~ 4300 4950
+NoConn ~ 4300 4750
+NoConn ~ 4300 4450
+NoConn ~ 4300 4250
+NoConn ~ 4300 4050
+NoConn ~ 4300 3950
+NoConn ~ 4300 3850
+NoConn ~ 4300 3750
+NoConn ~ 4300 3550
+NoConn ~ 4900 3350
+NoConn ~ 5000 3350
+NoConn ~ 5100 3350
+NoConn ~ 5700 3550
+NoConn ~ 5700 4250
+NoConn ~ 5700 4350
+NoConn ~ 5700 4450
+NoConn ~ 5700 4750
+NoConn ~ 5700 4850
+NoConn ~ 5700 5050
+NoConn ~ 5700 5150
+NoConn ~ 5700 5250
+NoConn ~ 5700 5350
+NoConn ~ 5700 5450
+NoConn ~ 8050 4400
 $EndSCHEMATC
