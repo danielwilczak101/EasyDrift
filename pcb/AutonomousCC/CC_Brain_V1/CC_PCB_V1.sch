@@ -4,14 +4,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 2
-Title "Autonomous Crazy Cart V1"
+Title "Autonomous Crazy Cart V2"
 Date "09/12/2021"
 Rev "09/18/2021"
 Comp "Engineering Physics Propulsion Lab * EPPL *"
-Comment1 "might need future revisions"
-Comment2 ""
-Comment3 ""
-Comment4 ""
+Comment1 ""
+Comment2 "Made Relay and Radio module pins bigger (2.45mm)"
+Comment3 "Relay Circuit"
+Comment4 "Added: Switch for PICO V"
 $EndDescr
 $Comp
 L CC_PCB_V1-rescue:Conn_01x06-Connector_Generic J5
@@ -358,9 +358,9 @@ Text GLabel 2150 4950 0    50   Input ~ 0
 +3.3V_Pico
 Text GLabel 2150 4850 0    50   Input ~ 0
 +3.3V
-Text Notes 1750 4300 0    50   ~ 0
+Text Notes 1755 4665 0    50   ~ 0
 Pico Power Switch for Programming\n
-Text Notes 6900 1150 0    50   ~ 0
+Text Notes 6925 1235 0    50   ~ 10
 USB (PWR In)\n
 Wire Wire Line
 	2150 4850 2350 4850
@@ -478,12 +478,12 @@ GP10
 Text GLabel 8700 1950 0    50   Output ~ 0
 GP11
 $Comp
-L Connector:Conn_01x02_Male J?
+L Connector:Conn_01x02_Male J9
 U 1 1 61610430
 P 2550 4950
-F 0 "J?" H 2522 4832 50  0000 R CNN
+F 0 "J9" H 2522 4832 50  0000 R CNN
 F 1 "Conn_01x02_Male" H 2522 4923 50  0000 R CNN
-F 2 "" H 2550 4950 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2550 4950 50  0001 C CNN
 F 3 "~" H 2550 4950 50  0001 C CNN
 	1    2550 4950
 	-1   0    0    1   

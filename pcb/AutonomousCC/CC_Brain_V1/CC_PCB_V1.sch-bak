@@ -354,36 +354,23 @@ F 3 "~" H 775 1300 50  0001 C CNN
 	1    775  1300
 	1    0    0    -1  
 $EndComp
-Text GLabel 2350 5100 3    50   Input ~ 0
+Text GLabel 2150 4950 0    50   Input ~ 0
 +3.3V_Pico
-Text GLabel 1850 4750 0    50   Input ~ 0
+Text GLabel 2150 4850 0    50   Input ~ 0
 +3.3V
-Text Notes 1750 4300 0    50   ~ 0
+Text Notes 1755 4665 0    50   ~ 0
 Pico Power Switch for Programming\n
-Text Notes 6900 1150 0    50   ~ 0
+Text Notes 6925 1235 0    50   ~ 10
 USB (PWR In)\n
-$Comp
-L SSA12G:SSA12G S1
-U 1 1 615BBB5C
-P 2350 4750
-F 0 "S1" H 2427 4796 50  0000 L CNN
-F 1 "SSA12G" H 2427 4705 50  0000 L CNN
-F 2 "my_footprints:SW_SSA12G" H 2350 4750 50  0001 L BNN
-F 3 "" H 2350 4750 50  0001 L BNN
-F 4 "Compliant" H 2350 4750 50  0001 L BNN "EU_RoHS_Compliance"
-F 5 "1-1437575-5" H 2350 4750 50  0001 L BNN "Comment"
-	1    2350 4750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	1850 4750 2050 4750
-Wire Wire Line
-	2350 4950 2350 5100
+	2150 4850 2350 4850
 $Sheet
 S 8850 1350 2000 1600
 U 615DA4AF
 F0 "relay" 50
 F1 "relay.sch" 50
+F2 "Relay1" I L 8850 1750 50 
+F3 "Relay2" I L 8850 1950 50 
 $EndSheet
 Text GLabel 5850 4150 2    50   Input ~ 0
 GP10
@@ -455,7 +442,6 @@ Wire Wire Line
 Connection ~ 6150 3750
 Wire Wire Line
 	6150 3750 5700 3750
-NoConn ~ 2350 4550
 NoConn ~ 4300 5450
 NoConn ~ 4300 5250
 NoConn ~ 4300 5150
@@ -483,4 +469,25 @@ NoConn ~ 5700 5250
 NoConn ~ 5700 5350
 NoConn ~ 5700 5450
 NoConn ~ 8050 4400
+Wire Wire Line
+	8850 1750 8700 1750
+Wire Wire Line
+	8850 1950 8700 1950
+Text GLabel 8700 1750 0    50   Output ~ 0
+GP10
+Text GLabel 8700 1950 0    50   Output ~ 0
+GP11
+$Comp
+L Connector:Conn_01x02_Male J9
+U 1 1 61610430
+P 2550 4950
+F 0 "J9" H 2522 4832 50  0000 R CNN
+F 1 "Conn_01x02_Male" H 2522 4923 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2550 4950 50  0001 C CNN
+F 3 "~" H 2550 4950 50  0001 C CNN
+	1    2550 4950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2150 4950 2350 4950
 $EndSCHEMATC
