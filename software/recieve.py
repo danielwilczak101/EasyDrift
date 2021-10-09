@@ -4,6 +4,7 @@ from time import sleep
 import struct
 import math
 
+# Radio pins and config
 csn = Pin(14, mode=Pin.OUT, value=1) # Chip Select Not
 ce = Pin(17, mode=Pin.OUT, value=0)  # Chip Enable
 led = Pin(25, Pin.OUT)               # Onboard LED
@@ -13,23 +14,19 @@ payload_size = 20
 handle_forward  = Pin(10, Pin.OUT)    # Relay 1.
 handle_backward = Pin(11, Pin.OUT)    # Relay 2.
 
-# Set both relays to off position
-handle_forward.value(1)
-handle_backward.value(1)
-
 # Throttle
 pwm = PWM(Pin(22))                    # Throttle pin.
 pwm.freq(1000)                        # Establish frequencry for throttle.
 
 # Set both relays to off position
-handle_forward.value(1)
+handle_forward.value(1)             
 handle_backward.value(1)
 
 # Stepper motor
-disable = Pin(21, Pin.OUT) # Control stepper on or off.
-disable.value(1)
-step = Pin(12)                        # Pin to sent PWM signal to.                        # Starting direction.
-direction = Pin(13, Pin.OUT)
+disable = Pin(21, Pin.OUT)   # Control stepper on or off.
+disable.value(1)             # Enable the stepper motor by default.
+step = Pin(12)               # Pin to sent PWM signal to. 
+direction = Pin(13, Pin.OUT) # Establish the direction pin.
 
 
 @rp2.asm_pio(set_init=rp2.PIO.OUT_LOW)
