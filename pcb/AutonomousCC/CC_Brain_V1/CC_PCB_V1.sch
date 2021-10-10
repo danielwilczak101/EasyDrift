@@ -201,7 +201,7 @@ U 1 1 61465212
 P 3830 1690
 F 0 "C2" H 3735 1760 50  0000 L CNN
 F 1 "C" H 3735 1615 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm" H 3868 1540 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm" H 3868 1540 50  0001 C CNN
 F 3 "https://www.vishay.com/docs/28549/dseries.pdf" H 3830 1690 50  0001 C CNN
 	1    3830 1690
 	1    0    0    -1  
@@ -242,7 +242,7 @@ U 1 1 61472D8C
 P 3230 1690
 F 0 "C1" H 3230 1765 50  0000 L CNN
 F 1 "CP" H 3235 1610 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm" H 3268 1540 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm" H 3268 1540 50  0001 C CNN
 F 3 "https://www.tdk-electronics.tdk.com/inf/20/30/db/aec/B41866.pdf" H 3230 1690 50  0001 C CNN
 	1    3230 1690
 	1    0    0    -1  
