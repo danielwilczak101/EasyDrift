@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 2
 Title "Autonomous Crazy Cart V2"
 Date "09/12/2021"
-Rev "09/18/2021"
+Rev "10/13/2021"
 Comp "Engineering Physics Propulsion Lab * EPPL *"
 Comment1 ""
 Comment2 "Made Relay and Radio module pins bigger (2.45mm)"
@@ -109,7 +109,7 @@ L CC_PCB_V1-rescue:PWR_FLAG-power #FLG0103
 U 1 1 6132C74E
 P 6250 3600
 F 0 "#FLG0103" H 6250 3675 50  0001 C CNN
-F 1 "PWR_FLAG" V 6250 3700 50  0000 L CNN
+F 1 "PWR_FLAG" V 6165 3390 50  0000 L CNN
 F 2 "" H 6250 3600 50  0001 C CNN
 F 3 "~" H 6250 3600 50  0001 C CNN
 	1    6250 3600
@@ -183,13 +183,13 @@ Text GLabel 4470 2725 0    59   Input ~ 0
 GP26
 Text GLabel 4470 2825 0    59   Input ~ 0
 GP27
-Text GLabel 5850 3950 2    59   Input ~ 0
+Text GLabel 6900 3950 2    59   Input ~ 0
 GP12
 Text GLabel 5850 3850 2    59   Input ~ 0
 GP13
 Text GLabel 4050 4150 0    59   Input ~ 0
 GP21
-Text GLabel 4050 4350 0    59   Input ~ 0
+Text GLabel 3540 4350 0    59   Input ~ 0
 GP22
 Text GLabel 4050 4550 0    59   Input ~ 0
 GP26
@@ -201,7 +201,7 @@ U 1 1 61465212
 P 3830 1690
 F 0 "C2" H 3735 1760 50  0000 L CNN
 F 1 "C" H 3735 1615 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm" H 3868 1540 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm" H 3868 1540 50  0001 C CNN
 F 3 "https://www.vishay.com/docs/28549/dseries.pdf" H 3830 1690 50  0001 C CNN
 	1    3830 1690
 	1    0    0    -1  
@@ -242,7 +242,7 @@ U 1 1 61472D8C
 P 3230 1690
 F 0 "C1" H 3230 1765 50  0000 L CNN
 F 1 "CP" H 3235 1610 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm" H 3268 1540 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm" H 3268 1540 50  0001 C CNN
 F 3 "https://www.tdk-electronics.tdk.com/inf/20/30/db/aec/B41866.pdf" H 3230 1690 50  0001 C CNN
 	1    3230 1690
 	1    0    0    -1  
@@ -408,8 +408,6 @@ Wire Wire Line
 Wire Wire Line
 	5700 3850 5850 3850
 Wire Wire Line
-	5850 3950 5700 3950
-Wire Wire Line
 	5700 4050 5850 4050
 Wire Wire Line
 	5850 4150 5700 4150
@@ -425,8 +423,6 @@ Wire Wire Line
 	4050 4650 4300 4650
 Wire Wire Line
 	4300 4550 4050 4550
-Wire Wire Line
-	4050 4350 4300 4350
 Wire Wire Line
 	4300 4150 4050 4150
 Wire Wire Line
@@ -490,4 +486,70 @@ F 3 "~" H 2550 4950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2150 4950 2350 4950
+$Comp
+L Device:R_Small_US R?
+U 1 1 616756D3
+P 6575 3850
+AR Path="/615DA4AF/616756D3" Ref="R?"  Part="1" 
+AR Path="/616756D3" Ref="R?"  Part="1" 
+F 0 "R?" H 6620 3900 50  0000 L CNN
+F 1 "1k" H 6605 3795 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 6575 3850 50  0001 C CNN
+F 3 "~" H 6575 3850 50  0001 C CNN
+	1    6575 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 61676AAC
+P 3685 4250
+AR Path="/615DA4AF/61676AAC" Ref="R?"  Part="1" 
+AR Path="/61676AAC" Ref="R?"  Part="1" 
+F 0 "R?" H 3570 4300 50  0000 L CNN
+F 1 "1k" H 3715 4190 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 3685 4250 50  0001 C CNN
+F 3 "~" H 3685 4250 50  0001 C CNN
+	1    3685 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 616797FD
+P 6575 3525
+AR Path="/615DA4AF/616797FD" Ref="D?"  Part="1" 
+AR Path="/616797FD" Ref="D?"  Part="1" 
+F 0 "D?" V 6665 3575 50  0000 C CNN
+F 1 "SMD LED2" V 6360 3520 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6575 3525 50  0001 C CNN
+F 3 "~" H 6575 3525 50  0001 C CNN
+	1    6575 3525
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 6167A748
+P 3685 3925
+AR Path="/615DA4AF/6167A748" Ref="D?"  Part="1" 
+AR Path="/6167A748" Ref="D?"  Part="1" 
+F 0 "D?" V 3785 3980 50  0000 C CNN
+F 1 "SMD LED2" V 3465 3860 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3685 3925 50  0001 C CNN
+F 3 "~" H 3685 3925 50  0001 C CNN
+	1    3685 3925
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5700 3950 6575 3950
+Connection ~ 6575 3950
+Wire Wire Line
+	6575 3950 6900 3950
+Wire Wire Line
+	6575 3675 6575 3750
+Wire Wire Line
+	3540 4350 3685 4350
+Connection ~ 3685 4350
+Wire Wire Line
+	3685 4350 4300 4350
+Wire Wire Line
+	3685 4075 3685 4150
 $EndSCHEMATC

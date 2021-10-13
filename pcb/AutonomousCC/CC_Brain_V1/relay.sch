@@ -292,17 +292,6 @@ Wire Wire Line
 Wire Wire Line
 	3950 4850 3950 5250
 $Comp
-L Device:LED D2
-U 1 1 61659877
-P 3600 5450
-F 0 "D2" H 3593 5667 50  0000 C CNN
-F 1 "SMD LED2" H 3593 5576 50  0000 C CNN
-F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3600 5450 50  0001 C CNN
-F 3 "~" H 3600 5450 50  0001 C CNN
-	1    3600 5450
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR0110
 U 1 1 6165987D
 P 3250 4350
@@ -331,8 +320,6 @@ Wire Wire Line
 Connection ~ 4500 4350
 Wire Wire Line
 	3750 5450 3950 5450
-Wire Wire Line
-	3450 5450 3200 5450
 $Comp
 L power:+12V #PWR0112
 U 1 1 61677AFB
@@ -453,4 +440,17 @@ Text Notes 5650 1250 0    118  ~ 24
 Relay 1
 Text Notes 5650 4000 0    118  ~ 24
 Relay 2
+Wire Wire Line
+	3450 5450 3200 5450
+$Comp
+L Device:LED D2
+U 1 1 61659877
+P 3600 5450
+F 0 "D2" H 3593 5667 50  0000 C CNN
+F 1 "SMD LED2" H 3593 5576 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3600 5450 50  0001 C CNN
+F 3 "~" H 3600 5450 50  0001 C CNN
+	1    3600 5450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
