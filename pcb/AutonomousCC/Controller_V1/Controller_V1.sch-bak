@@ -52,26 +52,15 @@ F 3 "~" H 5400 1300 50  0001 C CNN
 	1    5400 1300
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+3.3V #PWR0101
-U 1 1 614D5BB9
-P 5850 1200
-F 0 "#PWR0101" H 5850 1050 50  0001 C CNN
-F 1 "+3.3V" V 5865 1328 50  0000 L CNN
-F 2 "" H 5850 1200 50  0001 C CNN
-F 3 "" H 5850 1200 50  0001 C CNN
-	1    5850 1200
-	0    1    1    0   
-$EndComp
 Text GLabel 5050 1300 0    50   Input ~ 0
 GP17
-Text GLabel 5050 1500 0    50   Input ~ 0
+Text GLabel 5850 1400 2    50   Input ~ 0
 GP07
 Text GLabel 5850 1300 2    50   Input ~ 0
 GP14
 NoConn ~ 5700 1500
 Wire Wire Line
-	5700 1400 5850 1400
+	5200 1500 5050 1500
 Wire Wire Line
 	5700 1300 5850 1300
 Wire Wire Line
@@ -81,7 +70,7 @@ Wire Wire Line
 Wire Wire Line
 	5200 1400 5050 1400
 Wire Wire Line
-	5050 1500 5200 1500
+	5850 1400 5700 1400
 $Comp
 L power:GND #PWR0102
 U 1 1 614DE3F1
@@ -159,7 +148,7 @@ Text GLabel 6350 3250 2    50   Input ~ 0
 GP27
 Text GLabel 6350 3350 2    50   Input ~ 0
 GP26
-Text GLabel 5850 1400 2    50   Input ~ 0
+Text GLabel 5050 1500 0    50   Input ~ 0
 GP04
 Text GLabel 4650 2950 0    50   Input ~ 0
 GP04
@@ -262,17 +251,6 @@ F 3 "" H 7900 1300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L power:+3.3V #PWR0110
-U 1 1 61510D22
-P 10300 1250
-F 0 "#PWR0110" H 10300 1100 50  0001 C CNN
-F 1 "+3.3V" V 10300 1350 50  0000 L CNN
-F 2 "" H 10300 1250 50  0001 C CNN
-F 3 "" H 10300 1250 50  0001 C CNN
-	1    10300 1250
-	0    1    1    0   
-$EndComp
-$Comp
 L power:GND #PWR0111
 U 1 1 61511661
 P 10300 1550
@@ -344,7 +322,6 @@ NoConn ~ 6200 3550
 NoConn ~ 6200 3450
 NoConn ~ 6200 3150
 NoConn ~ 6200 2950
-NoConn ~ 6200 2850
 NoConn ~ 6200 2750
 NoConn ~ 6200 2450
 NoConn ~ 4800 2450
@@ -371,17 +348,6 @@ NoConn ~ 2450 3150
 NoConn ~ 2450 2950
 NoConn ~ 9300 1400
 NoConn ~ 10400 -550
-$Comp
-L power:+3.3V #PWR01
-U 1 1 6153A302
-P 6350 2550
-F 0 "#PWR01" H 6350 2400 50  0001 C CNN
-F 1 "+3.3V" V 6365 2678 50  0000 L CNN
-F 2 "" H 6350 2550 50  0001 C CNN
-F 3 "" H 6350 2550 50  0001 C CNN
-	1    6350 2550
-	0    1    1    0   
-$EndComp
 $Comp
 L power:GND #PWR02
 U 1 1 6153A693
@@ -542,36 +508,10 @@ Wire Wire Line
 	5050 6100 5300 6100
 Wire Wire Line
 	5500 6100 5800 6100
-$Comp
-L power:GND #PWR04
-U 1 1 6151B378
-P 2750 5450
-F 0 "#PWR04" H 2750 5200 50  0001 C CNN
-F 1 "GND" V 2755 5322 50  0000 R CNN
-F 2 "" H 2750 5450 50  0001 C CNN
-F 3 "" H 2750 5450 50  0001 C CNN
-	1    2750 5450
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR06
-U 1 1 6151BF18
-P 5500 5450
-F 0 "#PWR06" H 5500 5200 50  0001 C CNN
-F 1 "GND" V 5505 5322 50  0000 R CNN
-F 2 "" H 5500 5450 50  0001 C CNN
-F 3 "" H 5500 5450 50  0001 C CNN
-	1    5500 5450
-	0    -1   -1   0   
-$EndComp
 Text GLabel 4650 3550 0    50   Input ~ 0
 GP09
 Text GLabel 4650 3750 0    50   Input ~ 0
 GP10
-Wire Wire Line
-	5500 5450 5250 5450
-Wire Wire Line
-	2750 5450 2500 5450
 Text GLabel 1800 5450 0    50   Input ~ 0
 GP15
 Text GLabel 4500 5450 0    50   Input ~ 0
@@ -595,4 +535,120 @@ Wire Wire Line
 NoConn ~ 9000 5450
 NoConn ~ 9000 5550
 NoConn ~ 9000 5850
+$Comp
+L power:+3.3VA #PWR0101
+U 1 1 616B9148
+P 6350 2550
+F 0 "#PWR0101" H 6350 2400 50  0001 C CNN
+F 1 "+3.3VA" V 6365 2678 50  0000 L CNN
+F 2 "" H 6350 2550 50  0001 C CNN
+F 3 "" H 6350 2550 50  0001 C CNN
+	1    6350 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0112
+U 1 1 616BB474
+P 6400 2850
+F 0 "#PWR0112" H 6400 2700 50  0001 C CNN
+F 1 "+3.3V" V 6415 2978 50  0000 L CNN
+F 2 "" H 6400 2850 50  0001 C CNN
+F 3 "" H 6400 2850 50  0001 C CNN
+	1    6400 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6200 2850 6400 2850
+$Comp
+L power:+3.3VA #PWR0113
+U 1 1 616C0192
+P 5850 1200
+F 0 "#PWR0113" H 5850 1050 50  0001 C CNN
+F 1 "+3.3VA" V 5865 1328 50  0000 L CNN
+F 2 "" H 5850 1200 50  0001 C CNN
+F 3 "" H 5850 1200 50  0001 C CNN
+	1    5850 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3VA #PWR01
+U 1 1 616C36FD
+P 10300 1250
+F 0 "#PWR01" H 10300 1100 50  0001 C CNN
+F 1 "+3.3VA" V 10315 1378 50  0000 L CNN
+F 2 "" H 10300 1250 50  0001 C CNN
+F 3 "" H 10300 1250 50  0001 C CNN
+	1    10300 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0110
+U 1 1 616D6DE7
+P 2700 5450
+F 0 "#PWR0110" H 2700 5300 50  0001 C CNN
+F 1 "+3.3V" V 2715 5578 50  0000 L CNN
+F 2 "" H 2700 5450 50  0001 C CNN
+F 3 "" H 2700 5450 50  0001 C CNN
+	1    2700 5450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2500 5450 2700 5450
+$Comp
+L power:+3.3V #PWR0114
+U 1 1 616DEE5A
+P 5500 5450
+F 0 "#PWR0114" H 5500 5300 50  0001 C CNN
+F 1 "+3.3V" V 5515 5578 50  0000 L CNN
+F 2 "" H 5500 5450 50  0001 C CNN
+F 3 "" H 5500 5450 50  0001 C CNN
+	1    5500 5450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5250 5450 5500 5450
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 616E5E70
+P 2050 1050
+F 0 "H1" H 2150 1096 50  0000 L CNN
+F 1 "MountingHole" H 2150 1005 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 2050 1050 50  0001 C CNN
+F 3 "~" H 2050 1050 50  0001 C CNN
+	1    2050 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 616E6AD8
+P 2050 1300
+F 0 "H2" H 2150 1346 50  0000 L CNN
+F 1 "MountingHole" H 2150 1255 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 2050 1300 50  0001 C CNN
+F 3 "~" H 2050 1300 50  0001 C CNN
+	1    2050 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 616E70BF
+P 2050 1550
+F 0 "H3" H 2150 1596 50  0000 L CNN
+F 1 "MountingHole" H 2150 1505 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 2050 1550 50  0001 C CNN
+F 3 "~" H 2050 1550 50  0001 C CNN
+	1    2050 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 616E75A2
+P 2050 1800
+F 0 "H4" H 2150 1846 50  0000 L CNN
+F 1 "MountingHole" H 2150 1755 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad" H 2050 1800 50  0001 C CNN
+F 3 "~" H 2050 1800 50  0001 C CNN
+	1    2050 1800
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
