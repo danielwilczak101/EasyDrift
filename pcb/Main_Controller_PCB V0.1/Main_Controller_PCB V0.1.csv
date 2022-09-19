@@ -1,0 +1,12 @@
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;"J2,J1";"PinHeader_1x06_P2.54mm_Vertical";2;"Pwr/Coms";;;
+2;"C1";"C_0603_1608Metric";1;"0.33 uF";;;
+3;"H3,H4,H1,H2";"MountingHole_2.2mm_M2";4;"MountingHole";;;
+4;"J7,J8";"RJ45_Ninigi_GE";2;"8P8C";;;
+5;"VR1";"TO228P991X255-3N";1;"LM78M05CDTX_NOPB";;;
+6;"J5";"PinHeader_1x02_P2.54mm_Vertical";1;"Pedal PWM";;;
+7;"J4";"PinHeader_1x03_P2.54mm_Vertical";1;"Foot Pedal";;;
+8;"A1";"Arduino_Nano";1;"Arduino_Nano_v3.x";;;
+9;"J3";"PinHeader_1x03_P2.54mm_Vertical";1;"LED";;;
+10;"J6";"TE_282837-2";1;"Screw_Terminal_01x02";;;
+11;"C2";"C_0603_1608Metric";1;"0.1uF";;;
