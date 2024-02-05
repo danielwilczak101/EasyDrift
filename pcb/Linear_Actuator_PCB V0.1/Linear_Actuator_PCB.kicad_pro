@@ -382,7 +382,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "Linear_Actuator_PCB2.STEP",
       "vrml": ""
     },
     "page_layout_descr_file": ""
@@ -431,8 +431,12 @@
       ""
     ],
     [
-      "427780da-a1aa-4951-807f-20427a6075ca",
-      "RELAY"
+      "9360c1d7-295a-4988-be5c-3abc78023f62",
+      "Boat Relays"
+    ],
+    [
+      "ea0a58fe-93d8-4cf4-ad4b-c813c20e66c5",
+      "Power Management"
     ]
   ],
   "text_variables": {}
